@@ -7,13 +7,8 @@ import {PoccoIO} from "./PoccoIO.mjs"
   console.log(obj);
 })()
 
-/** @class */
-export class 商品 {
-  花束コード
-  商品名
-  価格
-  単品リスト
-}
+
+
 
 export class 単品 {
   花コード
@@ -23,3 +18,5 @@ export class 単品 {
 export class 仕入れ先 {
   仕入れ先コード
 }
+
+
