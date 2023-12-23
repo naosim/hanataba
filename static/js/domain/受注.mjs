@@ -3,7 +3,7 @@ import { ユーザーID } from "./ユーザー.mjs"
 import { 花束コード } from "./商品.mjs"
 
 export class 受注 {
-  /** @type {string} */
+  /** @type {注文ID} */
   注文ID
   /** @type {Date} */
   お届け日
