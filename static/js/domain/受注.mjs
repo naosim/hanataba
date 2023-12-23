@@ -1,7 +1,8 @@
-import { ユーザーID } from "./user.mjs"
-import { 花束コード } from "./product.mjs"
+import { StringValueObject } from "../lib/ValueObject.mjs"
+import { ユーザーID } from "./ユーザー.mjs"
+import { 花束コード } from "./商品.mjs"
 
-export class 注文 {
+export class 受注 {
   /** @type {string} */
   注文ID
   /** @type {Date} */
@@ -20,4 +21,7 @@ export class 注文 {
   お届けメッセージ
   /** @type {ユーザーID} */
   ユーザID
+}
+
+export class 注文ID extends StringValueObject {
 }
