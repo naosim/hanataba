@@ -1,0 +1,25 @@
+import {PoccoIO} from "./PoccoIO.mjs"
+
+(async function() {
+  var poccoIO = new PoccoIO();
+  // var obj = await poccoIO.read("data.json");
+  var obj = await poccoIO.write("data.json", {value: "bye-by1e"});
+  console.log(obj);
+})()
+
+/** @class */
+export class 商品 {
+  花束コード
+  商品名
+  価格
+  単品リスト
+}
+
+export class 単品 {
+  花コード
+  仕入れ先コード
+}
+
+export class 仕入れ先 {
+  仕入れ先コード
+}
