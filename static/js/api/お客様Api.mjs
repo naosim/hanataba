@@ -5,13 +5,22 @@ import { お客様, お客様ID } from "../domain/お客様.mjs";
 export class お客様Api {
   #poccoIO;
   #_お客様Repository
+  
+  /**
+   * @private
+   */
   constructor() {
     this.#poccoIO = new PoccoIO();
-    this.#_お客様Repository = new お客様RepositoryImpl(this.#poccoIO)
   }
 
   async load() {
-    await this.#_お客様Repository.load();
+    this.#_お客様Repository = await お客様RepositoryImpl.create(this.#poccoIO)
+  }
+
+  static async create() {
+    const result = new お客様Api();
+    await result.load();
+    return result;
   }
 
   /**

@@ -1,5 +1,6 @@
 import { PoccoIO } from "../PoccoIO.mjs";
 import { お客様, お客様ID, お客様Repository } from "../domain/お客様.mjs";
+import { toObject } from "../lib/ObjectConverter.mjs";
 
 export class お客様RepositoryImpl extends お客様Repository {
   /** @type {PoccoIO} */
@@ -13,13 +14,24 @@ export class お客様RepositoryImpl extends お客様Repository {
   #dataFilename = "お客様.json"
 
   /**
-   * 
+   * @private
    * @param {PoccoIO} poccoIO 
    */
   constructor(poccoIO) {
     super()
     this.poccoIO = poccoIO;
   }
+
+  /**
+   * @param {PoccoIO} poccoIO 
+   * @returns {Promise<お客様RepositoryImpl>}
+   */
+  static async create(poccoIO) {
+    const result = new お客様RepositoryImpl(poccoIO);
+    await result.load();
+    return result;
+  }
+
   /**
      * 
      * @param {お客様} user 
@@ -61,8 +73,8 @@ export class お客様RepositoryImpl extends お客様Repository {
       if(this.#values[i].お客様ID.value == id.value) {
         return this.#values[i];
       }
-      return null;
     }
+    return null;
   }
   #isLoaded = false;
   async load() {
@@ -72,6 +84,6 @@ export class お客様RepositoryImpl extends お客様Repository {
   }
 
   async #save() {
-    await this.poccoIO.write(this.#dataFilename, this.#values);
+    await this.poccoIO.write(this.#dataFilename, toObject(this.#values));
   }
 }

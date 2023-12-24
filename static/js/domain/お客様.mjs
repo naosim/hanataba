@@ -30,7 +30,9 @@ export class お客様Repository {
    * 
    * @param {お客様} user 
    */
-  入会する(user) {}
+  入会する(user) {
+    throw new Error("未実装");
+  }
 
   /**
    * 

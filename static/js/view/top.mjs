@@ -1,7 +1,6 @@
 import { お客様Api } from "../api/お客様Api.mjs";
 
-const _お客様Api = new お客様Api();
-await _お客様Api.load();
+const _お客様Api = await お客様Api.create();
 
 document.querySelector("#signupButton")?.addEventListener("click", async () => {
   console.log("click");

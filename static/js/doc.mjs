@@ -19,14 +19,17 @@ mermaid.initialize({startOnLoad: false});
     v.properties.map(p => `  ${v.className} : +${p.type} ${p.propertyName}`).forEach(p => lines.push(p))
     
     // メソッド
-    v.methods.map(p => `  ${v.className} : +${p.methodName}()`).forEach(p => lines.push(p))
+    v.methods.map(p => `  ${v.className} : +${p.returnType} ${p.methodName}()`).forEach(p => lines.push(p))
 
     // 依存関係
-    const ignoreTypes = new Set(["any", "string", "boolean", "number", "Date"])
+    const ignoreTypes = new Set(["any", "string", "boolean", "number", "Date", "void"])
     var dependecies = new Set();
     v.properties
       .filter(p => !ignoreTypes.has(p.type) )
       .forEach(p => dependecies.add(p.type.split("[]").join("")));
+    v.methods
+      .filter(p => !ignoreTypes.has(p.returnType) )
+      .forEach(p => dependecies.add(p.returnType.split("[]").join("")));
     dependecies.forEach(p => lines.push(`  ${v.className} --> ${p}`));
     
     lines.push("") // 見やすくするための空行
@@ -34,7 +37,7 @@ mermaid.initialize({startOnLoad: false});
     return lines.join("\n")
   }).join("\n")
 
-  text = text.split(">").join("&gt;");
+  text = text.split(">").join("&gt;").split("<").join("&lt;");
   console.log(text);
   document.querySelector(".mermaid").innerHTML = text;
   mermaid.init();
@@ -58,7 +61,12 @@ class ClassDef {
     })
 
     var methods = denoDocClassObj.classDef.methods.map(p => {
-      return {methodName: p.name}
+      /** @type {any[]} */
+      const tags = p.jsDoc?.tags || [];
+      var returnType = tags.filter(t => t.kind == "return").map(t => t.type)[0] || "void";
+      // Promiseを消す。モデリングにおいて重要な情報でないため
+      returnType = returnType.split("Promise<").join("").split(">").join("")
+      return {methodName: p.name, returnType}
     })
 
     var location = decodeURI(denoDocClassObj.location.filename)
