@@ -12,13 +12,20 @@
       "isAbstract": false,
       "constructors": [
         {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "private"
+              }
+            ]
+          },
           "accessibility": null,
           "hasBody": true,
           "name": "constructor",
           "params": [],
           "location": {
             "filename": "file:///home/naosim/git/hanataba/static/js/api/%E3%81%8A%E5%AE%A2%E6%A7%98Api.mjs",
-            "line": 8,
+            "line": 12,
             "col": 2
           }
         }
@@ -56,7 +63,28 @@
           },
           "location": {
             "filename": "file:///home/naosim/git/hanataba/static/js/api/%E3%81%8A%E5%AE%A2%E6%A7%98Api.mjs",
-            "line": 13,
+            "line": 16,
+            "col": 2
+          }
+        },
+        {
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": true,
+          "name": "create",
+          "kind": "method",
+          "functionDef": {
+            "params": [],
+            "returnType": null,
+            "hasBody": true,
+            "isAsync": true,
+            "isGenerator": false,
+            "typeParams": []
+          },
+          "location": {
+            "filename": "file:///home/naosim/git/hanataba/static/js/api/%E3%81%8A%E5%AE%A2%E6%A7%98Api.mjs",
+            "line": 20,
             "col": 2
           }
         },
@@ -117,7 +145,7 @@
           },
           "location": {
             "filename": "file:///home/naosim/git/hanataba/static/js/api/%E3%81%8A%E5%AE%A2%E6%A7%98Api.mjs",
-            "line": 22,
+            "line": 31,
             "col": 2
           }
         },
@@ -167,7 +195,7 @@
           },
           "location": {
             "filename": "file:///home/naosim/git/hanataba/static/js/api/%E3%81%8A%E5%AE%A2%E6%A7%98Api.mjs",
-            "line": 30,
+            "line": 39,
             "col": 2
           }
         },
@@ -204,7 +232,7 @@
           },
           "location": {
             "filename": "file:///home/naosim/git/hanataba/static/js/api/%E3%81%8A%E5%AE%A2%E6%A7%98Api.mjs",
-            "line": 43,
+            "line": 52,
             "col": 2
           }
         }
@@ -276,7 +304,7 @@
     "name": "お客様RepositoryImpl",
     "location": {
       "filename": "file:///home/naosim/git/hanataba/static/js/datasource/%E3%81%8A%E5%AE%A2%E6%A7%98RepositoryImpl.mjs",
-      "line": 4,
+      "line": 5,
       "col": 0
     },
     "declarationKind": "export",
@@ -286,6 +314,9 @@
         {
           "jsDoc": {
             "tags": [
+              {
+                "kind": "private"
+              },
               {
                 "kind": "param",
                 "name": "poccoIO",
@@ -306,7 +337,7 @@
           ],
           "location": {
             "filename": "file:///home/naosim/git/hanataba/static/js/datasource/%E3%81%8A%E5%AE%A2%E6%A7%98RepositoryImpl.mjs",
-            "line": 19,
+            "line": 20,
             "col": 2
           }
         }
@@ -330,13 +361,54 @@
           "name": "poccoIO",
           "location": {
             "filename": "file:///home/naosim/git/hanataba/static/js/datasource/%E3%81%8A%E5%AE%A2%E6%A7%98RepositoryImpl.mjs",
-            "line": 6,
+            "line": 7,
             "col": 2
           }
         }
       ],
       "indexSignatures": [],
       "methods": [
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "param",
+                "name": "poccoIO",
+                "type": "PoccoIO"
+              },
+              {
+                "kind": "return",
+                "type": "Promise<お客様RepositoryImpl>"
+              }
+            ]
+          },
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": true,
+          "name": "create",
+          "kind": "method",
+          "functionDef": {
+            "params": [
+              {
+                "kind": "identifier",
+                "name": "poccoIO",
+                "optional": false,
+                "tsType": null
+              }
+            ],
+            "returnType": null,
+            "hasBody": true,
+            "isAsync": true,
+            "isGenerator": false,
+            "typeParams": []
+          },
+          "location": {
+            "filename": "file:///home/naosim/git/hanataba/static/js/datasource/%E3%81%8A%E5%AE%A2%E6%A7%98RepositoryImpl.mjs",
+            "line": 29,
+            "col": 2
+          }
+        },
         {
           "jsDoc": {
             "tags": [
@@ -383,7 +455,7 @@
           },
           "location": {
             "filename": "file:///home/naosim/git/hanataba/static/js/datasource/%E3%81%8A%E5%AE%A2%E6%A7%98RepositoryImpl.mjs",
-            "line": 27,
+            "line": 39,
             "col": 2
           }
         },
@@ -428,7 +500,7 @@
           },
           "location": {
             "filename": "file:///home/naosim/git/hanataba/static/js/datasource/%E3%81%8A%E5%AE%A2%E6%A7%98RepositoryImpl.mjs",
-            "line": 37,
+            "line": 49,
             "col": 2
           }
         },
@@ -469,7 +541,7 @@
           },
           "location": {
             "filename": "file:///home/naosim/git/hanataba/static/js/datasource/%E3%81%8A%E5%AE%A2%E6%A7%98RepositoryImpl.mjs",
-            "line": 46,
+            "line": 58,
             "col": 2
           }
         },
@@ -503,7 +575,7 @@
           },
           "location": {
             "filename": "file:///home/naosim/git/hanataba/static/js/datasource/%E3%81%8A%E5%AE%A2%E6%A7%98RepositoryImpl.mjs",
-            "line": 68,
+            "line": 80,
             "col": 2
           }
         }
@@ -568,6 +640,344 @@
     "importDef": {
       "src": "file:///home/naosim/git/hanataba/static/js/domain/%E3%81%8A%E5%AE%A2%E6%A7%98.mjs",
       "imported": "お客様Repository"
+    }
+  },
+  {
+    "kind": "import",
+    "name": "toObject",
+    "location": {
+      "filename": "file:///home/naosim/git/hanataba/static/js/datasource/%E3%81%8A%E5%AE%A2%E6%A7%98RepositoryImpl.mjs",
+      "line": 3,
+      "col": 0
+    },
+    "declarationKind": "private",
+    "importDef": {
+      "src": "file:///home/naosim/git/hanataba/static/js/lib/ObjectConverter.mjs",
+      "imported": "toObject"
+    }
+  },
+  {
+    "kind": "class",
+    "name": "商品RepositoryImpl",
+    "location": {
+      "filename": "file:///home/naosim/git/hanataba/static/js/datasource/%E5%95%86%E5%93%81RepositoryImpl.mjs",
+      "line": 4,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "private"
+              },
+              {
+                "kind": "param",
+                "name": "poccoIO",
+                "type": "PoccoIO"
+              }
+            ]
+          },
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "poccoIO",
+              "optional": false,
+              "tsType": null
+            }
+          ],
+          "location": {
+            "filename": "file:///home/naosim/git/hanataba/static/js/datasource/%E5%95%86%E5%93%81RepositoryImpl.mjs",
+            "line": 19,
+            "col": 2
+          }
+        }
+      ],
+      "properties": [
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "type",
+                "type": "PoccoIO"
+              }
+            ]
+          },
+          "tsType": null,
+          "readonly": false,
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "poccoIO",
+          "location": {
+            "filename": "file:///home/naosim/git/hanataba/static/js/datasource/%E5%95%86%E5%93%81RepositoryImpl.mjs",
+            "line": 6,
+            "col": 2
+          }
+        }
+      ],
+      "indexSignatures": [],
+      "methods": [
+        {
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "load",
+          "kind": "method",
+          "functionDef": {
+            "params": [],
+            "returnType": {
+              "repr": "Promise",
+              "kind": "typeRef",
+              "typeRef": {
+                "typeParams": [
+                  {
+                    "repr": "void",
+                    "kind": "keyword",
+                    "keyword": "void"
+                  }
+                ],
+                "typeName": "Promise"
+              }
+            },
+            "hasBody": true,
+            "isAsync": true,
+            "isGenerator": false,
+            "typeParams": []
+          },
+          "location": {
+            "filename": "file:///home/naosim/git/hanataba/static/js/datasource/%E5%95%86%E5%93%81RepositoryImpl.mjs",
+            "line": 24,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "param",
+                "name": "poccoIO",
+                "type": "PoccoIO"
+              }
+            ]
+          },
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": true,
+          "name": "create",
+          "kind": "method",
+          "functionDef": {
+            "params": [
+              {
+                "kind": "identifier",
+                "name": "poccoIO",
+                "optional": false,
+                "tsType": null
+              }
+            ],
+            "returnType": null,
+            "hasBody": true,
+            "isAsync": true,
+            "isGenerator": false,
+            "typeParams": []
+          },
+          "location": {
+            "filename": "file:///home/naosim/git/hanataba/static/js/datasource/%E5%95%86%E5%93%81RepositoryImpl.mjs",
+            "line": 33,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "return",
+                "type": "Promise<商品[]>"
+              }
+            ]
+          },
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "すべての商品を取得する",
+          "kind": "method",
+          "functionDef": {
+            "params": [],
+            "returnType": {
+              "repr": "Promise",
+              "kind": "typeRef",
+              "typeRef": {
+                "typeParams": [
+                  {
+                    "repr": "void",
+                    "kind": "keyword",
+                    "keyword": "void"
+                  }
+                ],
+                "typeName": "Promise"
+              }
+            },
+            "hasBody": true,
+            "isAsync": true,
+            "isGenerator": false,
+            "typeParams": []
+          },
+          "location": {
+            "filename": "file:///home/naosim/git/hanataba/static/js/datasource/%E5%95%86%E5%93%81RepositoryImpl.mjs",
+            "line": 42,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "param",
+                "name": "_商品",
+                "type": "商品"
+              }
+            ]
+          },
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "商品を追加する",
+          "kind": "method",
+          "functionDef": {
+            "params": [
+              {
+                "kind": "identifier",
+                "name": "_商品",
+                "optional": false,
+                "tsType": null
+              }
+            ],
+            "returnType": {
+              "repr": "Promise",
+              "kind": "typeRef",
+              "typeRef": {
+                "typeParams": [
+                  {
+                    "repr": "void",
+                    "kind": "keyword",
+                    "keyword": "void"
+                  }
+                ],
+                "typeName": "Promise"
+              }
+            },
+            "hasBody": true,
+            "isAsync": true,
+            "isGenerator": false,
+            "typeParams": []
+          },
+          "location": {
+            "filename": "file:///home/naosim/git/hanataba/static/js/datasource/%E5%95%86%E5%93%81RepositoryImpl.mjs",
+            "line": 50,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "return",
+                "type": "花束コード"
+              }
+            ]
+          },
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "花束コードを生成する",
+          "kind": "method",
+          "functionDef": {
+            "params": [],
+            "returnType": null,
+            "hasBody": true,
+            "isAsync": false,
+            "isGenerator": false,
+            "typeParams": []
+          },
+          "location": {
+            "filename": "file:///home/naosim/git/hanataba/static/js/datasource/%E5%95%86%E5%93%81RepositoryImpl.mjs",
+            "line": 63,
+            "col": 2
+          }
+        }
+      ],
+      "extends": "商品Repository",
+      "implements": [],
+      "typeParams": [],
+      "superTypeParams": []
+    }
+  },
+  {
+    "kind": "import",
+    "name": "PoccoIO",
+    "location": {
+      "filename": "file:///home/naosim/git/hanataba/static/js/datasource/%E5%95%86%E5%93%81RepositoryImpl.mjs",
+      "line": 1,
+      "col": 0
+    },
+    "declarationKind": "private",
+    "importDef": {
+      "src": "file:///home/naosim/git/hanataba/static/js/PoccoIO.mjs",
+      "imported": "PoccoIO"
+    }
+  },
+  {
+    "kind": "import",
+    "name": "商品",
+    "location": {
+      "filename": "file:///home/naosim/git/hanataba/static/js/datasource/%E5%95%86%E5%93%81RepositoryImpl.mjs",
+      "line": 2,
+      "col": 0
+    },
+    "declarationKind": "private",
+    "importDef": {
+      "src": "file:///home/naosim/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
+      "imported": "商品"
+    }
+  },
+  {
+    "kind": "import",
+    "name": "商品Repository",
+    "location": {
+      "filename": "file:///home/naosim/git/hanataba/static/js/datasource/%E5%95%86%E5%93%81RepositoryImpl.mjs",
+      "line": 2,
+      "col": 0
+    },
+    "declarationKind": "private",
+    "importDef": {
+      "src": "file:///home/naosim/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
+      "imported": "商品Repository"
+    }
+  },
+  {
+    "kind": "import",
+    "name": "花束コード",
+    "location": {
+      "filename": "file:///home/naosim/git/hanataba/static/js/datasource/%E5%95%86%E5%93%81RepositoryImpl.mjs",
+      "line": 2,
+      "col": 0
+    },
+    "declarationKind": "private",
+    "importDef": {
+      "src": "file:///home/naosim/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
+      "imported": "花束コード"
     }
   },
   {
@@ -898,7 +1308,32 @@
     "declarationKind": "export",
     "classDef": {
       "isAbstract": false,
-      "constructors": [],
+      "constructors": [
+        {
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "仕入先コード",
+              "optional": false,
+              "tsType": null
+            },
+            {
+              "kind": "identifier",
+              "name": "仕入先名",
+              "optional": false,
+              "tsType": null
+            }
+          ],
+          "location": {
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E4%BB%95%E5%85%A5%E5%85%88.mjs",
+            "line": 8,
+            "col": 2
+          }
+        }
+      ],
       "properties": [
         {
           "jsDoc": {
@@ -919,7 +1354,7 @@
           "location": {
             "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E4%BB%95%E5%85%A5%E5%85%88.mjs",
             "line": 5,
-            "col": 4
+            "col": 2
           }
         },
         {
@@ -941,7 +1376,7 @@
           "location": {
             "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E4%BB%95%E5%85%A5%E5%85%88.mjs",
             "line": 7,
-            "col": 4
+            "col": 2
           }
         }
       ],
@@ -958,7 +1393,7 @@
     "name": "仕入先コード",
     "location": {
       "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E4%BB%95%E5%85%A5%E5%85%88.mjs",
-      "line": 10,
+      "line": 14,
       "col": 0
     },
     "declarationKind": "export",
@@ -969,6 +1404,86 @@
       "indexSignatures": [],
       "methods": [],
       "extends": "StringValueObject",
+      "implements": [],
+      "typeParams": [],
+      "superTypeParams": []
+    }
+  },
+  {
+    "kind": "class",
+    "name": "仕入先Repository",
+    "location": {
+      "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E4%BB%95%E5%85%A5%E5%85%88.mjs",
+      "line": 20,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "tags": [
+        {
+          "kind": "unsupported",
+          "value": "@abstract"
+        }
+      ]
+    },
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [],
+      "properties": [],
+      "indexSignatures": [],
+      "methods": [
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "param",
+                "name": "_仕入先",
+                "type": "仕入先"
+              }
+            ]
+          },
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "仕入先を追加する",
+          "kind": "method",
+          "functionDef": {
+            "params": [
+              {
+                "kind": "identifier",
+                "name": "_仕入先",
+                "optional": false,
+                "tsType": null
+              }
+            ],
+            "returnType": {
+              "repr": "Promise",
+              "kind": "typeRef",
+              "typeRef": {
+                "typeParams": [
+                  {
+                    "repr": "void",
+                    "kind": "keyword",
+                    "keyword": "void"
+                  }
+                ],
+                "typeName": "Promise"
+              }
+            },
+            "hasBody": true,
+            "isAsync": true,
+            "isGenerator": false,
+            "typeParams": []
+          },
+          "location": {
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E4%BB%95%E5%85%A5%E5%85%88.mjs",
+            "line": 25,
+            "col": 2
+          }
+        }
+      ],
+      "extends": null,
       "implements": [],
       "typeParams": [],
       "superTypeParams": []
@@ -999,7 +1514,84 @@
     "declarationKind": "export",
     "classDef": {
       "isAbstract": false,
-      "constructors": [],
+      "constructors": [
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "unsupported",
+                "value": "@param {花コード} 花コード"
+              },
+              {
+                "kind": "unsupported",
+                "value": "@param {string} 花名称"
+              },
+              {
+                "kind": "unsupported",
+                "value": "@param {仕入先コード} 仕入先コード"
+              },
+              {
+                "kind": "unsupported",
+                "value": "@param {number} 発注リードタイム"
+              },
+              {
+                "kind": "unsupported",
+                "value": "@param {number} 購入単位数"
+              },
+              {
+                "kind": "unsupported",
+                "value": "@param {number} 品質維持可能日数"
+              }
+            ]
+          },
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "花コード",
+              "optional": false,
+              "tsType": null
+            },
+            {
+              "kind": "identifier",
+              "name": "花名称",
+              "optional": false,
+              "tsType": null
+            },
+            {
+              "kind": "identifier",
+              "name": "仕入先コード",
+              "optional": false,
+              "tsType": null
+            },
+            {
+              "kind": "identifier",
+              "name": "発注リードタイム",
+              "optional": false,
+              "tsType": null
+            },
+            {
+              "kind": "identifier",
+              "name": "購入単位数",
+              "optional": false,
+              "tsType": null
+            },
+            {
+              "kind": "identifier",
+              "name": "品質維持可能日数",
+              "optional": false,
+              "tsType": null
+            }
+          ],
+          "location": {
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8D%98%E5%93%81.mjs",
+            "line": 27,
+            "col": 2
+          }
+        }
+      ],
       "properties": [
         {
           "jsDoc": {
@@ -1020,7 +1612,7 @@
           "location": {
             "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8D%98%E5%93%81.mjs",
             "line": 6,
-            "col": 4
+            "col": 2
           }
         },
         {
@@ -1042,7 +1634,7 @@
           "location": {
             "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8D%98%E5%93%81.mjs",
             "line": 8,
-            "col": 4
+            "col": 2
           }
         },
         {
@@ -1064,7 +1656,7 @@
           "location": {
             "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8D%98%E5%93%81.mjs",
             "line": 10,
-            "col": 4
+            "col": 2
           }
         },
         {
@@ -1086,7 +1678,7 @@
           "location": {
             "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8D%98%E5%93%81.mjs",
             "line": 12,
-            "col": 4
+            "col": 2
           }
         },
         {
@@ -1108,7 +1700,7 @@
           "location": {
             "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8D%98%E5%93%81.mjs",
             "line": 14,
-            "col": 4
+            "col": 2
           }
         },
         {
@@ -1130,7 +1722,7 @@
           "location": {
             "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8D%98%E5%93%81.mjs",
             "line": 16,
-            "col": 4
+            "col": 2
           }
         }
       ],
@@ -1157,8 +1749,8 @@
           },
           "location": {
             "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8D%98%E5%93%81.mjs",
-            "line": 18,
-            "col": 4
+            "line": 43,
+            "col": 2
           }
         }
       ],
@@ -1173,7 +1765,7 @@
     "name": "花コード",
     "location": {
       "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8D%98%E5%93%81.mjs",
-      "line": 21,
+      "line": 46,
       "col": 0
     },
     "declarationKind": "export",
@@ -1228,7 +1820,114 @@
     "declarationKind": "export",
     "classDef": {
       "isAbstract": false,
-      "constructors": [],
+      "constructors": [
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "unsupported",
+                "value": "@param {注文ID} 注文ID"
+              },
+              {
+                "kind": "unsupported",
+                "value": "@param {Date} お届け日"
+              },
+              {
+                "kind": "unsupported",
+                "value": "@param {string} 送り主氏名"
+              },
+              {
+                "kind": "unsupported",
+                "value": "@param {string} お届け先住所"
+              },
+              {
+                "kind": "unsupported",
+                "value": "@param {string} お届け先氏名"
+              },
+              {
+                "kind": "unsupported",
+                "value": "@param {花束コード} ご注文花束コード"
+              },
+              {
+                "kind": "unsupported",
+                "value": "@param {boolean} メッセージ要不要"
+              },
+              {
+                "kind": "unsupported",
+                "value": "@param {string} お届けメッセージ"
+              },
+              {
+                "kind": "unsupported",
+                "value": "@param {お客様ID} お客様ID"
+              }
+            ]
+          },
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "注文ID",
+              "optional": false,
+              "tsType": null
+            },
+            {
+              "kind": "identifier",
+              "name": "お届け日",
+              "optional": false,
+              "tsType": null
+            },
+            {
+              "kind": "identifier",
+              "name": "送り主氏名",
+              "optional": false,
+              "tsType": null
+            },
+            {
+              "kind": "identifier",
+              "name": "お届け先住所",
+              "optional": false,
+              "tsType": null
+            },
+            {
+              "kind": "identifier",
+              "name": "お届け先氏名",
+              "optional": false,
+              "tsType": null
+            },
+            {
+              "kind": "identifier",
+              "name": "ご注文花束コード",
+              "optional": false,
+              "tsType": null
+            },
+            {
+              "kind": "identifier",
+              "name": "メッセージ要不要",
+              "optional": false,
+              "tsType": null
+            },
+            {
+              "kind": "identifier",
+              "name": "お届けメッセージ",
+              "optional": false,
+              "tsType": null
+            },
+            {
+              "kind": "identifier",
+              "name": "お客様ID",
+              "optional": false,
+              "tsType": null
+            }
+          ],
+          "location": {
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8F%97%E6%B3%A8.mjs",
+            "line": 37,
+            "col": 2
+          }
+        }
+      ],
       "properties": [
         {
           "jsDoc": {
@@ -1421,7 +2120,7 @@
           "optional": false,
           "isAbstract": false,
           "isStatic": false,
-          "name": "ユーザID",
+          "name": "お客様ID",
           "location": {
             "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8F%97%E6%B3%A8.mjs",
             "line": 23,
@@ -1442,7 +2141,7 @@
     "name": "注文ID",
     "location": {
       "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8F%97%E6%B3%A8.mjs",
-      "line": 26,
+      "line": 60,
       "col": 0
     },
     "declarationKind": "export",
@@ -1511,7 +2210,64 @@
     "declarationKind": "export",
     "classDef": {
       "isAbstract": false,
-      "constructors": [],
+      "constructors": [
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "unsupported",
+                "value": "@param {花束コード} 花束コード"
+              },
+              {
+                "kind": "unsupported",
+                "value": "@param {string} 商品名"
+              },
+              {
+                "kind": "unsupported",
+                "value": "@param {number} 価格"
+              },
+              {
+                "kind": "unsupported",
+                "value": "@param {単品と数[]} 単品と数リスト"
+              }
+            ]
+          },
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "花束コード",
+              "optional": false,
+              "tsType": null
+            },
+            {
+              "kind": "identifier",
+              "name": "商品名",
+              "optional": false,
+              "tsType": null
+            },
+            {
+              "kind": "identifier",
+              "name": "価格",
+              "optional": false,
+              "tsType": null
+            },
+            {
+              "kind": "identifier",
+              "name": "単品と数リスト",
+              "optional": false,
+              "tsType": null
+            }
+          ],
+          "location": {
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
+            "line": 19,
+            "col": 2
+          }
+        }
+      ],
       "properties": [
         {
           "jsDoc": {
@@ -1587,7 +2343,57 @@
         }
       ],
       "indexSignatures": [],
-      "methods": [],
+      "methods": [
+        {
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "toObject",
+          "kind": "method",
+          "functionDef": {
+            "params": [],
+            "returnType": null,
+            "hasBody": true,
+            "isAsync": false,
+            "isGenerator": false,
+            "typeParams": []
+          },
+          "location": {
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
+            "line": 32,
+            "col": 2
+          }
+        },
+        {
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": true,
+          "name": "create",
+          "kind": "method",
+          "functionDef": {
+            "params": [
+              {
+                "kind": "identifier",
+                "name": "object",
+                "optional": false,
+                "tsType": null
+              }
+            ],
+            "returnType": null,
+            "hasBody": true,
+            "isAsync": false,
+            "isGenerator": false,
+            "typeParams": []
+          },
+          "location": {
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
+            "line": 41,
+            "col": 2
+          }
+        }
+      ],
       "extends": null,
       "implements": [],
       "typeParams": [],
@@ -1599,7 +2405,7 @@
     "name": "花束コード",
     "location": {
       "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
-      "line": 13,
+      "line": 51,
       "col": 0
     },
     "declarationKind": "export",
@@ -1620,13 +2426,50 @@
     "name": "単品と数",
     "location": {
       "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
-      "line": 16,
+      "line": 54,
       "col": 0
     },
     "declarationKind": "export",
     "classDef": {
       "isAbstract": false,
-      "constructors": [],
+      "constructors": [
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "unsupported",
+                "value": "@param {花コード} 花コード"
+              },
+              {
+                "kind": "unsupported",
+                "value": "@param {number} 数"
+              }
+            ]
+          },
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "花コード",
+              "optional": false,
+              "tsType": null
+            },
+            {
+              "kind": "identifier",
+              "name": "数",
+              "optional": false,
+              "tsType": null
+            }
+          ],
+          "location": {
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
+            "line": 65,
+            "col": 2
+          }
+        }
+      ],
       "properties": [
         {
           "jsDoc": {
@@ -1646,7 +2489,7 @@
           "name": "花コード",
           "location": {
             "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
-            "line": 18,
+            "line": 56,
             "col": 2
           }
         },
@@ -1668,13 +2511,75 @@
           "name": "数",
           "location": {
             "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
-            "line": 20,
+            "line": 58,
             "col": 2
           }
         }
       ],
       "indexSignatures": [],
-      "methods": [],
+      "methods": [
+        {
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "toObject",
+          "kind": "method",
+          "functionDef": {
+            "params": [],
+            "returnType": null,
+            "hasBody": true,
+            "isAsync": false,
+            "isGenerator": false,
+            "typeParams": []
+          },
+          "location": {
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
+            "line": 69,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "unsupported",
+                "value": "@param {{花コード: string, 数: number}} object"
+              },
+              {
+                "kind": "return",
+                "type": "単品と数"
+              }
+            ]
+          },
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": true,
+          "name": "create",
+          "kind": "method",
+          "functionDef": {
+            "params": [
+              {
+                "kind": "identifier",
+                "name": "object",
+                "optional": false,
+                "tsType": null
+              }
+            ],
+            "returnType": null,
+            "hasBody": true,
+            "isAsync": false,
+            "isGenerator": false,
+            "typeParams": []
+          },
+          "location": {
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
+            "line": 80,
+            "col": 2
+          }
+        }
+      ],
       "extends": null,
       "implements": [],
       "typeParams": [],
@@ -1686,7 +2591,7 @@
     "name": "商品Repository",
     "location": {
       "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
-      "line": 27,
+      "line": 88,
       "col": 0
     },
     "declarationKind": "export",
@@ -1742,7 +2647,90 @@
           },
           "location": {
             "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
-            "line": 31,
+            "line": 92,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "param",
+                "name": "_商品",
+                "type": "商品"
+              }
+            ]
+          },
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "商品を追加する",
+          "kind": "method",
+          "functionDef": {
+            "params": [
+              {
+                "kind": "identifier",
+                "name": "_商品",
+                "optional": false,
+                "tsType": null
+              }
+            ],
+            "returnType": {
+              "repr": "Promise",
+              "kind": "typeRef",
+              "typeRef": {
+                "typeParams": [
+                  {
+                    "repr": "void",
+                    "kind": "keyword",
+                    "keyword": "void"
+                  }
+                ],
+                "typeName": "Promise"
+              }
+            },
+            "hasBody": true,
+            "isAsync": true,
+            "isGenerator": false,
+            "typeParams": []
+          },
+          "location": {
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
+            "line": 100,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "return",
+                "type": "花束コード"
+              }
+            ]
+          },
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "花束コードを生成する",
+          "kind": "method",
+          "functionDef": {
+            "params": [],
+            "returnType": {
+              "repr": "void",
+              "kind": "keyword",
+              "keyword": "void"
+            },
+            "hasBody": true,
+            "isAsync": false,
+            "isGenerator": false,
+            "typeParams": []
+          },
+          "location": {
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
+            "line": 107,
             "col": 2
           }
         }
@@ -1938,6 +2926,31 @@
     "importDef": {
       "src": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8D%98%E5%93%81.mjs",
       "imported": "花コード"
+    }
+  },
+  {
+    "kind": "function",
+    "name": "toObject",
+    "location": {
+      "filename": "file:///home/naosim/git/hanataba/static/js/lib/ObjectConverter.mjs",
+      "line": 1,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "functionDef": {
+      "params": [
+        {
+          "kind": "identifier",
+          "name": "obj",
+          "optional": false,
+          "tsType": null
+        }
+      ],
+      "returnType": null,
+      "hasBody": true,
+      "isAsync": false,
+      "isGenerator": false,
+      "typeParams": []
     }
   },
   {
