@@ -23,7 +23,7 @@ export class 商品RepositoryImpl extends 商品Repository{
 
   async load() {
     const ary = await this.poccoIO.read(this.#dataFilename)
-    this.#values = []// TODO 実装
+    this.#values = ary.map(v => 商品.create(v))
   }
 
   /**
@@ -40,7 +40,7 @@ export class 商品RepositoryImpl extends 商品Repository{
    * @returns {Promise<商品[]>}
    */
   async すべての商品を取得する() {
-    throw new Error("未実装");
+    return [...this.#values]
   }
 
   /**
