@@ -13,7 +13,7 @@ const rootPath = "/js/";
     .filter(v => v.kind == "class")
     .map(v => new ClassDef(v));
   console.log(classDefs);
-  document.querySelector(".mermaid").innerHTML = toMermaidText(classDefs);
+  console.log(document.querySelector(".mermaid").innerHTML = toMermaidFlowchartText(classDefs));
   mermaid.init();
 })()
 
@@ -65,25 +65,43 @@ function toMermaidText(classDefs) {
  * @param {ClassDef[]} classDefs 
  */
 function toMermaidFlowchartText(classDefs) {
-  var text = "\nclassDiagram\n" + classDefs.map(v => {
+  var text = "\nflowchart LR\n" + classDefs.map(v => {
     const lines = [];
-    lines.push(`  namespace ${v.namespace} { class ${v.className} }`);
+    v.namespaces.forEach(n => lines.push(`subgraph ${n}`))
+    lines.push(`${v.className}["${toInnerClassText(v)}"]`);
+    v.namespaces.forEach(n => lines.push(`end`))
 
-    if(v.isAbstract) {
-      lines.push(`  <<Abstract>> ${v.className}`)
-    }
-
-    // プロパティ
-    v.properties.map(p => `  ${v.className} : +${p.type} ${p.propertyName}`).forEach(p => lines.push(p))
-    
-    // メソッド
-    v.methods.map(p => `  ${v.className} : +${p.returnType} ${p.methodName}()${p.isStatic ? "$" : ""}`).forEach(p => lines.push(p))
+    // 依存関係
+    const ignoreTypes = new Set(["any", "string", "boolean", "number", "Date", "void"])
+    var dependecies = new Set();
+    v.properties
+      .map(p => p.type.split("[]").join(""))
+      .filter(p => v.className != p)
+      .filter(p => !ignoreTypes.has(p))
+      .forEach(p => dependecies.add(p));
+    v.methods
+      .map(p => p.returnType.split("[]").join(""))
+      .filter(p => v.className != p)
+      .filter(p => !ignoreTypes.has(p))
+      .forEach(p => dependecies.add(p));
+    dependecies.forEach(p => lines.push(`  ${v.className} --> ${p}`));
     return lines.join("\n")
   }).join("\n")
 
-  text = text.split(">").join("&gt;").split("<").join("&lt;");
+  text = text.split(">").join("&gt;").split("<").join("&lt;").split("-hr-").join("<hr>");
   return text;
+}
 
+/**
+ * 
+ * @param {ClassDef} classDef 
+ */
+function toInnerClassText(classDef) {
+  const propertylines = [];
+  classDef.properties.map(p => `+${p.type} ${p.propertyName}`).forEach(p => propertylines.push(p));
+  const methodlines = [];
+  classDef.methods.map(p => `+${p.returnType} ${p.methodName}()${p.isStatic ? "$" : ""}`).forEach(p => methodlines.push(p))
+  return `${classDef.className}${classDef.isAbstract ? "\n**abstract**" : ""}-hr-${propertylines.join("\n")}-hr-${methodlines.join("\n")}`.trim()
 }
 
 class ClassDef {
@@ -97,22 +115,11 @@ class ClassDef {
   isAbstract
   constructor(denoDocClassObj) {
     var properties = denoDocClassObj.classDef.properties.map(p => {
-      // console.log(p.jsDoc);
       return {
         propertyName: p.name,
         type: p.jsDoc?.tags.filter(t => t.kind == "type").map(t => t.type)[0] || "any"
       }
     })
-    /*
-    "jsDoc": {
-      "tags": [
-        {
-          "kind": "unsupported",
-          "value": "@abstract"
-        }
-      ]
-    }
-    */
 
     var methods = denoDocClassObj.classDef.methods.map(p => {
       /** @type {any[]} */

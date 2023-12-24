@@ -7,6 +7,13 @@
 title: Node
 ---
 flowchart LR
-    id["hoge<hr />+ string name<br />+ string age<br />"]
+subgraph one
+id
+end
+subgraph one
+id2
+end
+
+id["hoge"]
   
 ```
