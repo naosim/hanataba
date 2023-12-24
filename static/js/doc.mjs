@@ -7,12 +7,10 @@ const rootPath = "/js/";
 
 (async function() {
   var poccoIO = new PoccoIO();
-  // var obj = await poccoIO.read("data.json");
   /** @type {Array} */
   var ary = await poccoIO.read("doc.json");
-  var classDefs = ary
-    .filter(v => v.kind == "class")
-    .map(v => new ClassDef(v));
+  var classDefs = ary.filter(v => v.kind == "class").map(v => new ClassDef(v));
+  classDefs = classDefs.filter(v => v.location.indexOf("/domain/") != -1);// ドメイン層だけ出力
   console.log(classDefs);
   // @ts-ignore
   console.log(document.querySelector(".mermaid").innerHTML = toMermaidFlowchartText(classDefs));

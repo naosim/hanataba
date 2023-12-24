@@ -1,1 +1,1 @@
-deno doc --json ./static/js/**/*.mjs > file/doc.json
+deno doc --json ./static/js/**/*.mjs ./static/js/**/**/*.mjs > file/doc.json
