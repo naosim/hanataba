@@ -1,5 +1,5 @@
 import { PoccoIO } from "../PoccoIO.mjs";
-import { 商品, 商品Repository, 花束コード } from "../domain/商品.mjs";
+import { 商品, 商品Repository, 花束コード } from "../domain/カタログ/商品.mjs";
 
 export class 商品RepositoryImpl extends 商品Repository{
     /** @type {PoccoIO} */
@@ -61,6 +61,6 @@ export class 商品RepositoryImpl extends 商品Repository{
    * @returns {花束コード}
    */
   花束コードを生成する() {
-    return new 花束コード(`${Date.now()}_${this.#num++}`)
+    return new 花束コード(`花束${Date.now()}_${this.#num++}`)
   }
 }

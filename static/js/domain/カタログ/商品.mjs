@@ -1,4 +1,4 @@
-import { StringValueObject } from "../lib/ValueObject.mjs"
+import { StringValueObject } from "../../lib/ValueObject.mjs"
 import { 花コード } from "./単品.mjs"
 
 export class 商品 {

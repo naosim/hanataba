@@ -1,6 +1,6 @@
 import { StringValueObject } from "../lib/ValueObject.mjs"
 import { お客様ID } from "./お客様.mjs"
-import { 花束コード } from "./商品.mjs"
+import { 花束コード } from "./カタログ/商品.mjs"
 
 export class 受注 {
   /** @type {注文ID} */

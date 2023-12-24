@@ -1,5 +1,5 @@
 import { StringValueObject } from "../lib/ValueObject.mjs"
-import { 花コード } from "./単品.mjs"
+import { 花コード } from "./カタログ/単品.mjs"
 
 export class 在庫 {
     /** @type {在庫ID} */

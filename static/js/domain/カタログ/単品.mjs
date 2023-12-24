@@ -1,4 +1,4 @@
-import { StringValueObject } from "../lib/ValueObject.mjs"
+import { StringValueObject } from "../../lib/ValueObject.mjs"
 import { 仕入先コード } from "./仕入先.mjs"
 
 export class 単品 {
@@ -44,4 +44,31 @@ export class 単品 {
 }
 
 export class 花コード extends StringValueObject {
+}
+
+/**
+ * @abstract
+ */
+export class 単品Repository {
+  /**
+   * @returns {Promise<単品[]>}
+   */
+  async すべての単品を取得する() {
+    throw new Error("未実装");
+  }
+
+  /**
+   * 
+   * @param {単品} _単品 
+   */
+  async 単品を追加する(_単品) {
+    throw new Error("未実装");
+  }
+
+  /**
+   * @returns {花コード}
+   */
+  花コードを生成する() {
+    throw new Error("未実装");
+  }
 }
