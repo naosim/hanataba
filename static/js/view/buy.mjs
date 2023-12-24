@@ -1,6 +1,7 @@
 import { お客様Api } from "../api/お客様Api.mjs";
 import { カタログApi } from "../api/カタログApi.mjs";
 
+// @ts-ignore
 const {id, code} = location.href.split("?")[1].split("&").reduce((memo, v) => {
   const [key, value] = v.split("=");
   memo[key] = decodeURI(value);
