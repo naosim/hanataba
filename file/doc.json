@@ -3,7 +3,7 @@
     "kind": "class",
     "name": "ユーザー",
     "location": {
-      "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC.mjs",
+      "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC.mjs",
       "line": 3,
       "col": 0
     },
@@ -29,7 +29,7 @@
           "isStatic": false,
           "name": "ユーザID",
           "location": {
-            "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC.mjs",
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC.mjs",
             "line": 5,
             "col": 2
           }
@@ -51,7 +51,7 @@
           "isStatic": false,
           "name": "お客様名",
           "location": {
-            "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC.mjs",
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC.mjs",
             "line": 8,
             "col": 2
           }
@@ -69,7 +69,7 @@
     "kind": "class",
     "name": "ユーザーID",
     "location": {
-      "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC.mjs",
+      "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC.mjs",
       "line": 13,
       "col": 0
     },
@@ -90,13 +90,13 @@
     "kind": "import",
     "name": "StringValueObject",
     "location": {
-      "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC.mjs",
+      "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC.mjs",
       "line": 1,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/Users/nao_p/git/hanataba/static/js/lib/ValueObject.mjs",
+      "src": "file:///home/naosim/git/hanataba/static/js/lib/ValueObject.mjs",
       "imported": "StringValueObject"
     }
   },
@@ -104,7 +104,7 @@
     "kind": "class",
     "name": "仕入先",
     "location": {
-      "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E4%BB%95%E5%85%A5%E5%85%88.mjs",
+      "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E4%BB%95%E5%85%A5%E5%85%88.mjs",
       "line": 3,
       "col": 0
     },
@@ -130,7 +130,7 @@
           "isStatic": false,
           "name": "仕入先コード",
           "location": {
-            "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E4%BB%95%E5%85%A5%E5%85%88.mjs",
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E4%BB%95%E5%85%A5%E5%85%88.mjs",
             "line": 5,
             "col": 4
           }
@@ -152,7 +152,7 @@
           "isStatic": false,
           "name": "仕入先名",
           "location": {
-            "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E4%BB%95%E5%85%A5%E5%85%88.mjs",
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E4%BB%95%E5%85%A5%E5%85%88.mjs",
             "line": 7,
             "col": 4
           }
@@ -170,7 +170,7 @@
     "kind": "class",
     "name": "仕入先コード",
     "location": {
-      "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E4%BB%95%E5%85%A5%E5%85%88.mjs",
+      "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E4%BB%95%E5%85%A5%E5%85%88.mjs",
       "line": 10,
       "col": 0
     },
@@ -191,13 +191,13 @@
     "kind": "import",
     "name": "StringValueObject",
     "location": {
-      "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E4%BB%95%E5%85%A5%E5%85%88.mjs",
+      "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E4%BB%95%E5%85%A5%E5%85%88.mjs",
       "line": 1,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/Users/nao_p/git/hanataba/static/js/lib/ValueObject.mjs",
+      "src": "file:///home/naosim/git/hanataba/static/js/lib/ValueObject.mjs",
       "imported": "StringValueObject"
     }
   },
@@ -205,7 +205,7 @@
     "kind": "class",
     "name": "単品",
     "location": {
-      "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E5%8D%98%E5%93%81.mjs",
+      "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8D%98%E5%93%81.mjs",
       "line": 4,
       "col": 0
     },
@@ -231,22 +231,30 @@
           "isStatic": false,
           "name": "花コード",
           "location": {
-            "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E5%8D%98%E5%93%81.mjs",
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8D%98%E5%93%81.mjs",
             "line": 6,
             "col": 4
           }
         },
         {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "type",
+                "type": "string"
+              }
+            ]
+          },
           "tsType": null,
           "readonly": false,
           "accessibility": null,
           "optional": false,
           "isAbstract": false,
           "isStatic": false,
-          "name": "花名",
+          "name": "花名称",
           "location": {
-            "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E5%8D%98%E5%93%81.mjs",
-            "line": 7,
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8D%98%E5%93%81.mjs",
+            "line": 8,
             "col": 4
           }
         },
@@ -267,8 +275,30 @@
           "isStatic": false,
           "name": "仕入先コード",
           "location": {
-            "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E5%8D%98%E5%93%81.mjs",
-            "line": 9,
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8D%98%E5%93%81.mjs",
+            "line": 10,
+            "col": 4
+          }
+        },
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "type",
+                "type": "number"
+              }
+            ]
+          },
+          "tsType": null,
+          "readonly": false,
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "発注リードタイム",
+          "location": {
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8D%98%E5%93%81.mjs",
+            "line": 12,
             "col": 4
           }
         },
@@ -289,8 +319,30 @@
           "isStatic": false,
           "name": "購入単位数",
           "location": {
-            "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E5%8D%98%E5%93%81.mjs",
-            "line": 11,
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8D%98%E5%93%81.mjs",
+            "line": 14,
+            "col": 4
+          }
+        },
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "type",
+                "type": "number"
+              }
+            ]
+          },
+          "tsType": null,
+          "readonly": false,
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "品質維持可能日数",
+          "location": {
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8D%98%E5%93%81.mjs",
+            "line": 16,
             "col": 4
           }
         }
@@ -317,8 +369,8 @@
             "typeParams": []
           },
           "location": {
-            "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E5%8D%98%E5%93%81.mjs",
-            "line": 13,
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8D%98%E5%93%81.mjs",
+            "line": 18,
             "col": 4
           }
         }
@@ -333,8 +385,8 @@
     "kind": "class",
     "name": "花コード",
     "location": {
-      "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E5%8D%98%E5%93%81.mjs",
-      "line": 16,
+      "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8D%98%E5%93%81.mjs",
+      "line": 21,
       "col": 0
     },
     "declarationKind": "export",
@@ -354,13 +406,13 @@
     "kind": "import",
     "name": "StringValueObject",
     "location": {
-      "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E5%8D%98%E5%93%81.mjs",
+      "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8D%98%E5%93%81.mjs",
       "line": 1,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/Users/nao_p/git/hanataba/static/js/lib/ValueObject.mjs",
+      "src": "file:///home/naosim/git/hanataba/static/js/lib/ValueObject.mjs",
       "imported": "StringValueObject"
     }
   },
@@ -368,13 +420,13 @@
     "kind": "import",
     "name": "仕入先コード",
     "location": {
-      "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E5%8D%98%E5%93%81.mjs",
+      "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8D%98%E5%93%81.mjs",
       "line": 2,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E4%BB%95%E5%85%A5%E5%85%88.mjs",
+      "src": "file:///home/naosim/git/hanataba/static/js/domain/%E4%BB%95%E5%85%A5%E5%85%88.mjs",
       "imported": "仕入先コード"
     }
   },
@@ -382,7 +434,7 @@
     "kind": "class",
     "name": "受注",
     "location": {
-      "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E5%8F%97%E6%B3%A8.mjs",
+      "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8F%97%E6%B3%A8.mjs",
       "line": 5,
       "col": 0
     },
@@ -408,7 +460,7 @@
           "isStatic": false,
           "name": "注文ID",
           "location": {
-            "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E5%8F%97%E6%B3%A8.mjs",
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8F%97%E6%B3%A8.mjs",
             "line": 7,
             "col": 2
           }
@@ -430,7 +482,7 @@
           "isStatic": false,
           "name": "お届け日",
           "location": {
-            "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E5%8F%97%E6%B3%A8.mjs",
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8F%97%E6%B3%A8.mjs",
             "line": 9,
             "col": 2
           }
@@ -452,7 +504,7 @@
           "isStatic": false,
           "name": "送り主氏名",
           "location": {
-            "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E5%8F%97%E6%B3%A8.mjs",
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8F%97%E6%B3%A8.mjs",
             "line": 11,
             "col": 2
           }
@@ -474,7 +526,7 @@
           "isStatic": false,
           "name": "お届け先住所",
           "location": {
-            "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E5%8F%97%E6%B3%A8.mjs",
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8F%97%E6%B3%A8.mjs",
             "line": 13,
             "col": 2
           }
@@ -496,7 +548,7 @@
           "isStatic": false,
           "name": "お届け先氏名",
           "location": {
-            "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E5%8F%97%E6%B3%A8.mjs",
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8F%97%E6%B3%A8.mjs",
             "line": 15,
             "col": 2
           }
@@ -518,7 +570,7 @@
           "isStatic": false,
           "name": "ご注文花束コード",
           "location": {
-            "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E5%8F%97%E6%B3%A8.mjs",
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8F%97%E6%B3%A8.mjs",
             "line": 17,
             "col": 2
           }
@@ -540,7 +592,7 @@
           "isStatic": false,
           "name": "メッセージ要不要",
           "location": {
-            "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E5%8F%97%E6%B3%A8.mjs",
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8F%97%E6%B3%A8.mjs",
             "line": 19,
             "col": 2
           }
@@ -562,7 +614,7 @@
           "isStatic": false,
           "name": "お届けメッセージ",
           "location": {
-            "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E5%8F%97%E6%B3%A8.mjs",
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8F%97%E6%B3%A8.mjs",
             "line": 21,
             "col": 2
           }
@@ -584,7 +636,7 @@
           "isStatic": false,
           "name": "ユーザID",
           "location": {
-            "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E5%8F%97%E6%B3%A8.mjs",
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8F%97%E6%B3%A8.mjs",
             "line": 23,
             "col": 2
           }
@@ -602,7 +654,7 @@
     "kind": "class",
     "name": "注文ID",
     "location": {
-      "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E5%8F%97%E6%B3%A8.mjs",
+      "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8F%97%E6%B3%A8.mjs",
       "line": 26,
       "col": 0
     },
@@ -623,13 +675,13 @@
     "kind": "import",
     "name": "StringValueObject",
     "location": {
-      "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E5%8F%97%E6%B3%A8.mjs",
+      "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8F%97%E6%B3%A8.mjs",
       "line": 1,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/Users/nao_p/git/hanataba/static/js/lib/ValueObject.mjs",
+      "src": "file:///home/naosim/git/hanataba/static/js/lib/ValueObject.mjs",
       "imported": "StringValueObject"
     }
   },
@@ -637,13 +689,13 @@
     "kind": "import",
     "name": "ユーザーID",
     "location": {
-      "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E5%8F%97%E6%B3%A8.mjs",
+      "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8F%97%E6%B3%A8.mjs",
       "line": 2,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC.mjs",
+      "src": "file:///home/naosim/git/hanataba/static/js/domain/%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC.mjs",
       "imported": "ユーザーID"
     }
   },
@@ -651,13 +703,13 @@
     "kind": "import",
     "name": "花束コード",
     "location": {
-      "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E5%8F%97%E6%B3%A8.mjs",
+      "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8F%97%E6%B3%A8.mjs",
       "line": 3,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
+      "src": "file:///home/naosim/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
       "imported": "花束コード"
     }
   },
@@ -665,7 +717,7 @@
     "kind": "class",
     "name": "商品",
     "location": {
-      "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
+      "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
       "line": 4,
       "col": 0
     },
@@ -691,7 +743,7 @@
           "isStatic": false,
           "name": "花束コード",
           "location": {
-            "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
             "line": 6,
             "col": 2
           }
@@ -705,7 +757,7 @@
           "isStatic": false,
           "name": "商品名",
           "location": {
-            "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
             "line": 7,
             "col": 2
           }
@@ -719,7 +771,7 @@
           "isStatic": false,
           "name": "価格",
           "location": {
-            "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
             "line": 8,
             "col": 2
           }
@@ -741,7 +793,7 @@
           "isStatic": false,
           "name": "単品と数リスト",
           "location": {
-            "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
             "line": 10,
             "col": 2
           }
@@ -759,7 +811,7 @@
     "kind": "class",
     "name": "花束コード",
     "location": {
-      "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
+      "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
       "line": 13,
       "col": 0
     },
@@ -780,7 +832,7 @@
     "kind": "class",
     "name": "単品と数",
     "location": {
-      "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
+      "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
       "line": 16,
       "col": 0
     },
@@ -806,7 +858,7 @@
           "isStatic": false,
           "name": "花コード",
           "location": {
-            "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
             "line": 18,
             "col": 2
           }
@@ -828,7 +880,7 @@
           "isStatic": false,
           "name": "数",
           "location": {
-            "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
             "line": 20,
             "col": 2
           }
@@ -846,13 +898,13 @@
     "kind": "import",
     "name": "StringValueObject",
     "location": {
-      "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
+      "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
       "line": 1,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/Users/nao_p/git/hanataba/static/js/lib/ValueObject.mjs",
+      "src": "file:///home/naosim/git/hanataba/static/js/lib/ValueObject.mjs",
       "imported": "StringValueObject"
     }
   },
@@ -860,14 +912,245 @@
     "kind": "import",
     "name": "花コード",
     "location": {
-      "filename": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
+      "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%95%86%E5%93%81.mjs",
       "line": 2,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/Users/nao_p/git/hanataba/static/js/domain/%E5%8D%98%E5%93%81.mjs",
+      "src": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8D%98%E5%93%81.mjs",
       "imported": "花コード"
+    }
+  },
+  {
+    "kind": "class",
+    "name": "在庫",
+    "location": {
+      "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+      "line": 4,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [],
+      "properties": [
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "type",
+                "type": "在庫ID"
+              }
+            ]
+          },
+          "tsType": null,
+          "readonly": false,
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "在庫ID",
+          "location": {
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+            "line": 6,
+            "col": 4
+          }
+        },
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "type",
+                "type": "花コード"
+              }
+            ]
+          },
+          "tsType": null,
+          "readonly": false,
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "花コード",
+          "location": {
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+            "line": 8,
+            "col": 4
+          }
+        },
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "type",
+                "type": "Date"
+              }
+            ]
+          },
+          "tsType": null,
+          "readonly": false,
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "納品日",
+          "location": {
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+            "line": 10,
+            "col": 4
+          }
+        },
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "type",
+                "type": "Date"
+              }
+            ]
+          },
+          "tsType": null,
+          "readonly": false,
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "品質維持期限日",
+          "location": {
+            "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+            "line": 12,
+            "col": 4
+          }
+        }
+      ],
+      "indexSignatures": [],
+      "methods": [],
+      "extends": null,
+      "implements": [],
+      "typeParams": [],
+      "superTypeParams": []
+    }
+  },
+  {
+    "kind": "class",
+    "name": "在庫ID",
+    "location": {
+      "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+      "line": 15,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [],
+      "properties": [],
+      "indexSignatures": [],
+      "methods": [],
+      "extends": "StringValueObject",
+      "implements": [],
+      "typeParams": [],
+      "superTypeParams": []
+    }
+  },
+  {
+    "kind": "import",
+    "name": "StringValueObject",
+    "location": {
+      "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+      "line": 1,
+      "col": 0
+    },
+    "declarationKind": "private",
+    "importDef": {
+      "src": "file:///home/naosim/git/hanataba/static/js/lib/ValueObject.mjs",
+      "imported": "StringValueObject"
+    }
+  },
+  {
+    "kind": "import",
+    "name": "花コード",
+    "location": {
+      "filename": "file:///home/naosim/git/hanataba/static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+      "line": 2,
+      "col": 0
+    },
+    "declarationKind": "private",
+    "importDef": {
+      "src": "file:///home/naosim/git/hanataba/static/js/domain/%E5%8D%98%E5%93%81.mjs",
+      "imported": "花コード"
+    }
+  },
+  {
+    "kind": "class",
+    "name": "StringValueObject",
+    "location": {
+      "filename": "file:///home/naosim/git/hanataba/static/js/lib/ValueObject.mjs",
+      "line": 1,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "param",
+                "name": "value",
+                "type": "string"
+              }
+            ]
+          },
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "value",
+              "optional": false,
+              "tsType": null
+            }
+          ],
+          "location": {
+            "filename": "file:///home/naosim/git/hanataba/static/js/lib/ValueObject.mjs",
+            "line": 7,
+            "col": 2
+          }
+        }
+      ],
+      "properties": [
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "type",
+                "type": "string"
+              }
+            ]
+          },
+          "tsType": null,
+          "readonly": false,
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "value",
+          "location": {
+            "filename": "file:///home/naosim/git/hanataba/static/js/lib/ValueObject.mjs",
+            "line": 3,
+            "col": 2
+          }
+        }
+      ],
+      "indexSignatures": [],
+      "methods": [],
+      "extends": null,
+      "implements": [],
+      "typeParams": [],
+      "superTypeParams": []
     }
   }
 ]

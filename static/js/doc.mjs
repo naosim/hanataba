@@ -13,17 +13,13 @@ mermaid.initialize({startOnLoad: false});
   console.log(classDefs);
 
   var text = "\nclassDiagram\n" + classDefs.map(v => {
-    const lines = [`  class ${v.className}{`];
+
+    const lines = [`  namespace ${v.namespace} { class ${v.className} }`];
     // プロパティ
-    v.properties
-      .map(p => `    +${p.type} ${p.propertyName}`).forEach(p => lines.push(p))
-    
+    v.properties.map(p => `  ${v.className} : +${p.type} ${p.propertyName}`).forEach(p => lines.push(p))
     
     // メソッド
-    v.methods.map(p => `    +${p.methodName}()`).forEach(p => lines.push(p))
-
-    lines.push("");// 空行が必要
-    lines.push("  }")
+    v.methods.map(p => `  ${v.className} : +${p.methodName}()`).forEach(p => lines.push(p))
 
     // 依存関係
     const ignoreTypes = new Set(["any", "string", "boolean", "number", "Date"])
@@ -32,7 +28,9 @@ mermaid.initialize({startOnLoad: false});
       .filter(p => !ignoreTypes.has(p.type) )
       .forEach(p => dependecies.add(p.type.split("[]").join("")));
     dependecies.forEach(p => lines.push(`  ${v.className} --> ${p}`));
-      // .map(p => `  ${v.className} --> ${p.type.split("[]").join("")}`).forEach(p => lines.push(p))
+    
+    lines.push("") // 見やすくするための空行
+
     return lines.join("\n")
   }).join("\n")
 
@@ -72,6 +70,10 @@ class ClassDef {
     this.package = location.split("/").at(-1),
     this.org = denoDocClassObj
     this.methods = methods
+  }
+  
+  get namespace() {
+    return this.location.split("/").at(-1).split(".").join("_");
   }
 }
 
