@@ -6,9 +6,9 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const server = http.createServer((req, res) => {
-  const reqPath = req.url;
+  const reqPath = req.url.split("?")[0];
   const sanitizedPath = path.normalize(reqPath).replace(/^(\.\.[\/\\])+/, '');
-  const filePath = path.join(__dirname, sanitizedPath);
+  const filePath = path.join(__dirname, decodeURI(sanitizedPath));
 
   if (req.method === 'POST') {
     if(sanitizedPath.indexOf("file") == -1) {
@@ -37,6 +37,7 @@ const server = http.createServer((req, res) => {
     });
   } else if (req.method === 'GET') {
     // GETリクエストの場合はファイルを読み込んで返す
+    console.log(filePath);
     fs.readFile(filePath, (err, data) => {
       if (err) {
         res.writeHead(404, { 'Content-Type': 'text/plain' });

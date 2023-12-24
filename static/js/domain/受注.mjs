@@ -1,5 +1,5 @@
 import { StringValueObject } from "../lib/ValueObject.mjs"
-import { ユーザーID } from "./ユーザー.mjs"
+import { お客様ID } from "./お客様.mjs"
 import { 花束コード } from "./商品.mjs"
 
 export class 受注 {
@@ -19,7 +19,7 @@ export class 受注 {
   メッセージ要不要
   /** @type {string} */
   お届けメッセージ
-  /** @type {ユーザーID} */
+  /** @type {お客様ID} */
   ユーザID
 }
 
