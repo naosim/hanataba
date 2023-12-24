@@ -1,4 +1,5 @@
 import {PoccoIO} from "./PoccoIO.mjs"
+// @ts-ignore
 import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
 mermaid.initialize({startOnLoad: false});
 
@@ -13,6 +14,7 @@ const rootPath = "/js/";
     .filter(v => v.kind == "class")
     .map(v => new ClassDef(v));
   console.log(classDefs);
+  // @ts-ignore
   console.log(document.querySelector(".mermaid").innerHTML = toMermaidFlowchartText(classDefs));
   mermaid.init();
 })()
@@ -145,7 +147,7 @@ class ClassDef {
   }
   
   get namespace() {
-    return this.location.split(rootPath)[1].split("/").at(-1).split(".").join("_");
+    return this.location.split(rootPath)[1].split("/").at(-1)?.split(".").join("_");
   }
   get namespaces() {
     return this.location.split(rootPath)[1].split("/").map(v => v.split(".").join("_"));
