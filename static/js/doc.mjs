@@ -64,8 +64,8 @@ function toMermaidText(classDefs) {
  * 
  * @param {ClassDef[]} classDefs 
  */
-function toMermaidFlowchartText(classDefs) {
-  var text = "\nflowchart LR\n" + classDefs.map(v => {
+function toMermaidFlowchartText(classDefs, direction = "TB") {
+  var text = `\nflowchart ${direction}\n` + classDefs.map(v => {
     const lines = [];
     v.namespaces.forEach(n => lines.push(`subgraph ${n}`))
     lines.push(`${v.className}["${toInnerClassText(v)}"]`);
@@ -86,7 +86,7 @@ function toMermaidFlowchartText(classDefs) {
       .filter(p => v.className != p)
       .filter(p => !ignoreTypes.has(p))
       .forEach(p => dependecies.add(p));
-    dependecies.forEach(p => lines.push(`  ${v.className} --> ${p}`));
+    dependecies.forEach(p => lines.push(`${v.className} --> ${p}`));
     return lines.join("\n")
   }).join("\n")
 
