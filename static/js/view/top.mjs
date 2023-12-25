@@ -6,7 +6,9 @@ const _お客様Api = await diContainer.getお客様Api()
 document.querySelector("#signupButton")?.addEventListener("click", async () => {
   console.log("click");
   /** @type {string} */
+  // @ts-ignore
   const id = document.querySelector("#signupId")?.value?.trim();
+  // @ts-ignore
   const name = document.querySelector("#name")?.value?.trim();
   if(id.length == 0 || name.length == 0) {
     alert("お客様ID と お客様氏名 を入力してください");
@@ -17,6 +19,8 @@ document.querySelector("#signupButton")?.addEventListener("click", async () => {
 
 document.querySelector("#loginButton")?.addEventListener("click", async () => {
   console.log("click");
+  
+  // @ts-ignore
   const id = document.querySelector("#userId")?.value?.trim();
   if(id.length == 0) {
     alert("お客様ID を入力してください");
