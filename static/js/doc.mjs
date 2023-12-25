@@ -76,11 +76,13 @@ function toMermaidFlowchartText(classDefs) {
     var dependecies = new Set();
     v.properties
       .map(p => p.type.split("[]").join(""))
+      .map(p => p.split(" ")[0].split("|")[0])
       .filter(p => v.className != p)
       .filter(p => !ignoreTypes.has(p))
       .forEach(p => dependecies.add(p));
     v.methods
       .map(p => p.returnType.split("[]").join(""))
+      .map(p => p.split(" ")[0].split("|")[0])
       .filter(p => v.className != p)
       .filter(p => !ignoreTypes.has(p))
       .forEach(p => dependecies.add(p));
