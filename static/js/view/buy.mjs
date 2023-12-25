@@ -1,5 +1,4 @@
-import { お客様Api } from "../api/お客様Api.mjs";
-import { カタログApi } from "../api/カタログApi.mjs";
+import { DiContainer } from "../DiContainer.mjs";
 
 // @ts-ignore
 const {id, code} = location.href.split("?")[1].split("&").reduce((memo, v) => {
@@ -9,9 +8,13 @@ const {id, code} = location.href.split("?")[1].split("&").reduce((memo, v) => {
 }, {})
 
 console.log(id, code);
+const diContainer = new DiContainer();
 
-const _お客様Api = await お客様Api.create();
-const _カタログApi = await カタログApi.create();
+const _お客様Api = await diContainer.getお客様Api()
+const _カタログApi = await diContainer.getカタログApi();
+const _注文Api = await diContainer.get注文Api()
+
+
 const name = await _お客様Api.お客様氏名を取得する(id)
 const divHello = document.querySelector("#hello");
 if(divHello) {

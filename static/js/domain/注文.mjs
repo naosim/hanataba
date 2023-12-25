@@ -2,7 +2,7 @@ import { StringValueObject } from "../lib/ValueObject.mjs"
 import { お客様ID } from "./お客様.mjs"
 import { 花束コード } from "./カタログ/商品.mjs"
 
-export class 受注 {
+export class 注文 {
   /** @type {注文ID} */
   注文ID
   /** @type {Date} */
@@ -17,7 +17,7 @@ export class 受注 {
   ご注文花束コード
   /** @type {boolean} */
   メッセージ要不要
-  /** @type {string} */
+  /** @type {string | null} */
   お届けメッセージ
   /** @type {お客様ID} */
   お客様ID
@@ -31,7 +31,7 @@ export class 受注 {
    * @param {string} お届け先氏名 
    * @param {花束コード} ご注文花束コード 
    * @param {boolean} メッセージ要不要 
-   * @param {string} お届けメッセージ 
+   * @param {string | null} お届けメッセージ 
    * @param {お客様ID} お客様ID 
    */
   constructor(
@@ -58,4 +58,24 @@ export class 受注 {
 }
 
 export class 注文ID extends StringValueObject {
+}
+
+/**
+ * @abstract
+ */
+export class 注文Repository {
+  /**
+   * 
+   * @param {注文} _注文 
+   */
+  注文する(_注文) {
+    throw new Error("未実装");
+  }
+
+  /**
+   * @returns {注文ID}
+   */
+  注文IDを生成する() {
+    throw new Error("未実装");
+  }
 }

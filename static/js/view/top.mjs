@@ -1,6 +1,7 @@
-import { お客様Api } from "../api/お客様Api.mjs";
+import { DiContainer } from "../DiContainer.mjs";
 
-const _お客様Api = await お客様Api.create();
+const diContainer = new DiContainer();
+const _お客様Api = await diContainer.getお客様Api()
 
 document.querySelector("#signupButton")?.addEventListener("click", async () => {
   console.log("click");

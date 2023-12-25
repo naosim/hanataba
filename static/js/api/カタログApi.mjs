@@ -1,27 +1,15 @@
-import { PoccoIO } from "../PoccoIO.mjs";
-import { 商品RepositoryImpl } from "../datasource/商品RepositoryImpl.mjs";
+import { 商品Repository } from "../domain/カタログ/商品.mjs";
 
 export class カタログApi {
-  #poccoIO;
-  /** @type {商品RepositoryImpl} */
-  // @ts-ignore
+  /** @type {商品Repository} */
   #_商品Repository;
   
   /**
-   * @private
+   * 
+   * @param {商品Repository} _商品Repository 
    */
-  constructor() {
-    this.#poccoIO = new PoccoIO();
-  }
-
-  async load() {
-    this.#_商品Repository = await 商品RepositoryImpl.create(this.#poccoIO)
-  }
-
-  static async create() {
-    const result = new カタログApi();
-    await result.load();
-    return result;
+  constructor(_商品Repository) {
+    this.#_商品Repository = _商品Repository
   }
 
   async すべての商品を取得する() {

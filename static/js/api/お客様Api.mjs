@@ -1,26 +1,15 @@
-import { PoccoIO } from "../PoccoIO.mjs";
-import { お客様RepositoryImpl } from "../datasource/お客様RepositoryImpl.mjs";
-import { お客様, お客様ID } from "../domain/お客様.mjs";
+import { お客様, お客様ID, お客様Repository } from "../domain/お客様.mjs";
 
 export class お客様Api {
-  #poccoIO;
+  /** @type {お客様Repository} */
   #_お客様Repository
   
   /**
-   * @private
+   * 
+   * @param {お客様Repository} _お客様Repository 
    */
-  constructor() {
-    this.#poccoIO = new PoccoIO();
-  }
-
-  async load() {
-    this.#_お客様Repository = await お客様RepositoryImpl.create(this.#poccoIO)
-  }
-
-  static async create() {
-    const result = new お客様Api();
-    await result.load();
-    return result;
+  constructor(_お客様Repository) {
+    this.#_お客様Repository = _お客様Repository
   }
 
   /**
