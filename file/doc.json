@@ -2221,10 +2221,113 @@
   },
   {
     "kind": "class",
+    "name": "在庫リスト",
+    "location": {
+      "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+      "line": 5,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [],
+      "properties": [],
+      "indexSignatures": [],
+      "methods": [
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "unsupported",
+                "value": "@param {注文} 注文"
+              },
+              {
+                "kind": "return",
+                "type": "boolean"
+              }
+            ]
+          },
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "結束できる",
+          "kind": "method",
+          "functionDef": {
+            "params": [
+              {
+                "kind": "identifier",
+                "name": "注文",
+                "optional": false,
+                "tsType": null
+              }
+            ],
+            "returnType": null,
+            "hasBody": true,
+            "isAsync": false,
+            "isGenerator": false,
+            "typeParams": []
+          },
+          "location": {
+            "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+            "line": 12,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "unsupported",
+                "value": "@param {注文} 注文"
+              },
+              {
+                "kind": "return",
+                "type": " {結束予約リスト: 結束予約[], 発注リスト: 発注[]",
+                "doc": "}"
+              }
+            ]
+          },
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "結束予約する",
+          "kind": "method",
+          "functionDef": {
+            "params": [
+              {
+                "kind": "identifier",
+                "name": "注文",
+                "optional": false,
+                "tsType": null
+              }
+            ],
+            "returnType": null,
+            "hasBody": true,
+            "isAsync": false,
+            "isGenerator": false,
+            "typeParams": []
+          },
+          "location": {
+            "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+            "line": 21,
+            "col": 2
+          }
+        }
+      ],
+      "extends": null,
+      "implements": [],
+      "typeParams": [],
+      "superTypeParams": []
+    }
+  },
+  {
+    "kind": "class",
     "name": "在庫",
     "location": {
       "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
-      "line": 4,
+      "line": 26,
       "col": 0
     },
     "declarationKind": "export",
@@ -2250,7 +2353,7 @@
           "name": "在庫ID",
           "location": {
             "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
-            "line": 6,
+            "line": 28,
             "col": 4
           }
         },
@@ -2272,7 +2375,7 @@
           "name": "花コード",
           "location": {
             "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
-            "line": 8,
+            "line": 30,
             "col": 4
           }
         },
@@ -2294,7 +2397,7 @@
           "name": "納品日",
           "location": {
             "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
-            "line": 10,
+            "line": 32,
             "col": 4
           }
         },
@@ -2316,7 +2419,95 @@
           "name": "品質維持期限日",
           "location": {
             "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
-            "line": 12,
+            "line": 34,
+            "col": 4
+          }
+        },
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "type",
+                "type": "発注"
+              }
+            ]
+          },
+          "tsType": null,
+          "readonly": false,
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "発注",
+          "location": {
+            "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+            "line": 37,
+            "col": 4
+          }
+        },
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "type",
+                "type": "納品"
+              }
+            ]
+          },
+          "tsType": null,
+          "readonly": false,
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "納品",
+          "location": {
+            "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+            "line": 39,
+            "col": 4
+          }
+        },
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "type",
+                "type": "結束予約[]"
+              }
+            ]
+          },
+          "tsType": null,
+          "readonly": false,
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "結束予約リスト",
+          "location": {
+            "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+            "line": 41,
+            "col": 4
+          }
+        },
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "type",
+                "type": "廃棄"
+              }
+            ]
+          },
+          "tsType": null,
+          "readonly": false,
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "廃棄",
+          "location": {
+            "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+            "line": 43,
             "col": 4
           }
         }
@@ -2331,10 +2522,578 @@
   },
   {
     "kind": "class",
+    "name": "発注",
+    "location": {
+      "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+      "line": 46,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [],
+      "properties": [
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "type",
+                "type": "発注ID"
+              }
+            ]
+          },
+          "tsType": null,
+          "readonly": false,
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "発注ID",
+          "location": {
+            "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+            "line": 48,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "type",
+                "type": "花コード"
+              }
+            ]
+          },
+          "tsType": null,
+          "readonly": false,
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "花コード",
+          "location": {
+            "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+            "line": 50,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "type",
+                "type": "number"
+              }
+            ]
+          },
+          "tsType": null,
+          "readonly": false,
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "数",
+          "location": {
+            "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+            "line": 52,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "type",
+                "type": "Date"
+              }
+            ]
+          },
+          "tsType": null,
+          "readonly": false,
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "納品予定日",
+          "location": {
+            "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+            "line": 54,
+            "col": 2
+          }
+        }
+      ],
+      "indexSignatures": [],
+      "methods": [],
+      "extends": null,
+      "implements": [],
+      "typeParams": [],
+      "superTypeParams": []
+    }
+  },
+  {
+    "kind": "class",
+    "name": "納品",
+    "location": {
+      "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+      "line": 57,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [],
+      "properties": [
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "type",
+                "type": "納品ID"
+              }
+            ]
+          },
+          "tsType": null,
+          "readonly": false,
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "納品ID",
+          "location": {
+            "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+            "line": 59,
+            "col": 4
+          }
+        },
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "type",
+                "type": "Date"
+              }
+            ]
+          },
+          "tsType": null,
+          "readonly": false,
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "納品日",
+          "location": {
+            "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+            "line": 61,
+            "col": 4
+          }
+        }
+      ],
+      "indexSignatures": [],
+      "methods": [],
+      "extends": null,
+      "implements": [],
+      "typeParams": [],
+      "superTypeParams": []
+    }
+  },
+  {
+    "kind": "class",
+    "name": "廃棄",
+    "location": {
+      "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+      "line": 64,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [],
+      "properties": [
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "type",
+                "type": "廃棄ID"
+              }
+            ]
+          },
+          "tsType": null,
+          "readonly": false,
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "廃棄ID",
+          "location": {
+            "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+            "line": 66,
+            "col": 4
+          }
+        },
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "type",
+                "type": "納品ID"
+              }
+            ]
+          },
+          "tsType": null,
+          "readonly": false,
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "納品ID",
+          "location": {
+            "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+            "line": 68,
+            "col": 4
+          }
+        },
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "type",
+                "type": "花コード"
+              }
+            ]
+          },
+          "tsType": null,
+          "readonly": false,
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "花コード",
+          "location": {
+            "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+            "line": 70,
+            "col": 4
+          }
+        },
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "type",
+                "type": "number"
+              }
+            ]
+          },
+          "tsType": null,
+          "readonly": false,
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "数",
+          "location": {
+            "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+            "line": 72,
+            "col": 4
+          }
+        },
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "type",
+                "type": "Date"
+              }
+            ]
+          },
+          "tsType": null,
+          "readonly": false,
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "廃棄日",
+          "location": {
+            "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+            "line": 74,
+            "col": 4
+          }
+        }
+      ],
+      "indexSignatures": [],
+      "methods": [],
+      "extends": null,
+      "implements": [],
+      "typeParams": [],
+      "superTypeParams": []
+    }
+  },
+  {
+    "kind": "class",
+    "name": "結束予約",
+    "location": {
+      "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+      "line": 77,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [],
+      "properties": [
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "type",
+                "type": "結束予約ID"
+              }
+            ]
+          },
+          "tsType": null,
+          "readonly": false,
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "利用ID",
+          "location": {
+            "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+            "line": 79,
+            "col": 4
+          }
+        },
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "type",
+                "type": "納品ID"
+              }
+            ]
+          },
+          "tsType": null,
+          "readonly": false,
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "納品ID",
+          "location": {
+            "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+            "line": 81,
+            "col": 4
+          }
+        },
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "type",
+                "type": "花コード"
+              }
+            ]
+          },
+          "tsType": null,
+          "readonly": false,
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "花コード",
+          "location": {
+            "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+            "line": 83,
+            "col": 4
+          }
+        },
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "type",
+                "type": "number"
+              }
+            ]
+          },
+          "tsType": null,
+          "readonly": false,
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "数",
+          "location": {
+            "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+            "line": 85,
+            "col": 4
+          }
+        },
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "type",
+                "type": "Date"
+              }
+            ]
+          },
+          "tsType": null,
+          "readonly": false,
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "結束日",
+          "location": {
+            "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+            "line": 87,
+            "col": 4
+          }
+        },
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "type",
+                "type": "注文ID"
+              }
+            ]
+          },
+          "tsType": null,
+          "readonly": false,
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "注文ID",
+          "location": {
+            "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+            "line": 89,
+            "col": 4
+          }
+        }
+      ],
+      "indexSignatures": [],
+      "methods": [
+        {
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "単品と数を取得する",
+          "kind": "method",
+          "functionDef": {
+            "params": [],
+            "returnType": null,
+            "hasBody": true,
+            "isAsync": false,
+            "isGenerator": false,
+            "typeParams": []
+          },
+          "location": {
+            "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+            "line": 91,
+            "col": 4
+          }
+        }
+      ],
+      "extends": null,
+      "implements": [],
+      "typeParams": [],
+      "superTypeParams": []
+    }
+  },
+  {
+    "kind": "class",
+    "name": "発注ID",
+    "location": {
+      "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+      "line": 96,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [],
+      "properties": [],
+      "indexSignatures": [],
+      "methods": [],
+      "extends": "StringValueObject",
+      "implements": [],
+      "typeParams": [],
+      "superTypeParams": []
+    }
+  },
+  {
+    "kind": "class",
     "name": "在庫ID",
     "location": {
       "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
-      "line": 15,
+      "line": 99,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [],
+      "properties": [],
+      "indexSignatures": [],
+      "methods": [],
+      "extends": "StringValueObject",
+      "implements": [],
+      "typeParams": [],
+      "superTypeParams": []
+    }
+  },
+  {
+    "kind": "class",
+    "name": "納品ID",
+    "location": {
+      "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+      "line": 102,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [],
+      "properties": [],
+      "indexSignatures": [],
+      "methods": [],
+      "extends": "StringValueObject",
+      "implements": [],
+      "typeParams": [],
+      "superTypeParams": []
+    }
+  },
+  {
+    "kind": "class",
+    "name": "廃棄ID",
+    "location": {
+      "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+      "line": 105,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [],
+      "properties": [],
+      "indexSignatures": [],
+      "methods": [],
+      "extends": "StringValueObject",
+      "implements": [],
+      "typeParams": [],
+      "superTypeParams": []
+    }
+  },
+  {
+    "kind": "class",
+    "name": "結束予約ID",
+    "location": {
+      "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+      "line": 108,
       "col": 0
     },
     "declarationKind": "export",
@@ -2376,6 +3135,48 @@
     "importDef": {
       "src": "./static/js/domain/%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0/%E5%8D%98%E5%93%81.mjs",
       "imported": "花コード"
+    }
+  },
+  {
+    "kind": "import",
+    "name": "単品と数",
+    "location": {
+      "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+      "line": 2,
+      "col": 0
+    },
+    "declarationKind": "private",
+    "importDef": {
+      "src": "./static/js/domain/%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0/%E5%8D%98%E5%93%81.mjs",
+      "imported": "単品と数"
+    }
+  },
+  {
+    "kind": "import",
+    "name": "注文",
+    "location": {
+      "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+      "line": 3,
+      "col": 0
+    },
+    "declarationKind": "private",
+    "importDef": {
+      "src": "./static/js/domain/%E6%B3%A8%E6%96%87.mjs",
+      "imported": "注文"
+    }
+  },
+  {
+    "kind": "import",
+    "name": "注文ID",
+    "location": {
+      "filename": "./static/js/domain/%E5%9C%A8%E5%BA%AB.mjs",
+      "line": 3,
+      "col": 0
+    },
+    "declarationKind": "private",
+    "importDef": {
+      "src": "./static/js/domain/%E6%B3%A8%E6%96%87.mjs",
+      "imported": "注文ID"
     }
   },
   {
@@ -3511,10 +4312,175 @@
   },
   {
     "kind": "class",
+    "name": "単品と数",
+    "location": {
+      "filename": "./static/js/domain/%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0/%E5%8D%98%E5%93%81.mjs",
+      "line": 49,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "unsupported",
+                "value": "@param {花コード} 花コード"
+              },
+              {
+                "kind": "unsupported",
+                "value": "@param {number} 数"
+              }
+            ]
+          },
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "花コード",
+              "optional": false,
+              "tsType": null
+            },
+            {
+              "kind": "identifier",
+              "name": "数",
+              "optional": false,
+              "tsType": null
+            }
+          ],
+          "location": {
+            "filename": "./static/js/domain/%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0/%E5%8D%98%E5%93%81.mjs",
+            "line": 60,
+            "col": 2
+          }
+        }
+      ],
+      "properties": [
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "type",
+                "type": "花コード"
+              }
+            ]
+          },
+          "tsType": null,
+          "readonly": false,
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "花コード",
+          "location": {
+            "filename": "./static/js/domain/%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0/%E5%8D%98%E5%93%81.mjs",
+            "line": 51,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "type",
+                "type": "number"
+              }
+            ]
+          },
+          "tsType": null,
+          "readonly": false,
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "数",
+          "location": {
+            "filename": "./static/js/domain/%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0/%E5%8D%98%E5%93%81.mjs",
+            "line": 53,
+            "col": 2
+          }
+        }
+      ],
+      "indexSignatures": [],
+      "methods": [
+        {
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "toObject",
+          "kind": "method",
+          "functionDef": {
+            "params": [],
+            "returnType": null,
+            "hasBody": true,
+            "isAsync": false,
+            "isGenerator": false,
+            "typeParams": []
+          },
+          "location": {
+            "filename": "./static/js/domain/%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0/%E5%8D%98%E5%93%81.mjs",
+            "line": 64,
+            "col": 2
+          }
+        },
+        {
+          "jsDoc": {
+            "tags": [
+              {
+                "kind": "unsupported",
+                "value": "@param {{花コード: string, 数: number}} object"
+              },
+              {
+                "kind": "return",
+                "type": "単品と数"
+              }
+            ]
+          },
+          "accessibility": null,
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": true,
+          "name": "create",
+          "kind": "method",
+          "functionDef": {
+            "params": [
+              {
+                "kind": "identifier",
+                "name": "object",
+                "optional": false,
+                "tsType": null
+              }
+            ],
+            "returnType": null,
+            "hasBody": true,
+            "isAsync": false,
+            "isGenerator": false,
+            "typeParams": []
+          },
+          "location": {
+            "filename": "./static/js/domain/%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0/%E5%8D%98%E5%93%81.mjs",
+            "line": 75,
+            "col": 2
+          }
+        }
+      ],
+      "extends": null,
+      "implements": [],
+      "typeParams": [],
+      "superTypeParams": []
+    }
+  },
+  {
+    "kind": "class",
     "name": "単品Repository",
     "location": {
       "filename": "./static/js/domain/%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0/%E5%8D%98%E5%93%81.mjs",
-      "line": 52,
+      "line": 83,
       "col": 0
     },
     "declarationKind": "export",
@@ -3570,7 +4536,7 @@
           },
           "location": {
             "filename": "./static/js/domain/%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0/%E5%8D%98%E5%93%81.mjs",
-            "line": 56,
+            "line": 87,
             "col": 2
           }
         },
@@ -3620,7 +4586,7 @@
           },
           "location": {
             "filename": "./static/js/domain/%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0/%E5%8D%98%E5%93%81.mjs",
-            "line": 64,
+            "line": 95,
             "col": 2
           }
         },
@@ -3653,7 +4619,7 @@
           },
           "location": {
             "filename": "./static/js/domain/%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0/%E5%8D%98%E5%93%81.mjs",
-            "line": 71,
+            "line": 102,
             "col": 2
           }
         }
@@ -3916,175 +4882,10 @@
   },
   {
     "kind": "class",
-    "name": "単品と数",
-    "location": {
-      "filename": "./static/js/domain/%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0/%E5%95%86%E5%93%81.mjs",
-      "line": 54,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "classDef": {
-      "isAbstract": false,
-      "constructors": [
-        {
-          "jsDoc": {
-            "tags": [
-              {
-                "kind": "unsupported",
-                "value": "@param {花コード} 花コード"
-              },
-              {
-                "kind": "unsupported",
-                "value": "@param {number} 数"
-              }
-            ]
-          },
-          "accessibility": null,
-          "hasBody": true,
-          "name": "constructor",
-          "params": [
-            {
-              "kind": "identifier",
-              "name": "花コード",
-              "optional": false,
-              "tsType": null
-            },
-            {
-              "kind": "identifier",
-              "name": "数",
-              "optional": false,
-              "tsType": null
-            }
-          ],
-          "location": {
-            "filename": "./static/js/domain/%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0/%E5%95%86%E5%93%81.mjs",
-            "line": 65,
-            "col": 2
-          }
-        }
-      ],
-      "properties": [
-        {
-          "jsDoc": {
-            "tags": [
-              {
-                "kind": "type",
-                "type": "花コード"
-              }
-            ]
-          },
-          "tsType": null,
-          "readonly": false,
-          "accessibility": null,
-          "optional": false,
-          "isAbstract": false,
-          "isStatic": false,
-          "name": "花コード",
-          "location": {
-            "filename": "./static/js/domain/%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0/%E5%95%86%E5%93%81.mjs",
-            "line": 56,
-            "col": 2
-          }
-        },
-        {
-          "jsDoc": {
-            "tags": [
-              {
-                "kind": "type",
-                "type": "number"
-              }
-            ]
-          },
-          "tsType": null,
-          "readonly": false,
-          "accessibility": null,
-          "optional": false,
-          "isAbstract": false,
-          "isStatic": false,
-          "name": "数",
-          "location": {
-            "filename": "./static/js/domain/%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0/%E5%95%86%E5%93%81.mjs",
-            "line": 58,
-            "col": 2
-          }
-        }
-      ],
-      "indexSignatures": [],
-      "methods": [
-        {
-          "accessibility": null,
-          "optional": false,
-          "isAbstract": false,
-          "isStatic": false,
-          "name": "toObject",
-          "kind": "method",
-          "functionDef": {
-            "params": [],
-            "returnType": null,
-            "hasBody": true,
-            "isAsync": false,
-            "isGenerator": false,
-            "typeParams": []
-          },
-          "location": {
-            "filename": "./static/js/domain/%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0/%E5%95%86%E5%93%81.mjs",
-            "line": 69,
-            "col": 2
-          }
-        },
-        {
-          "jsDoc": {
-            "tags": [
-              {
-                "kind": "unsupported",
-                "value": "@param {{花コード: string, 数: number}} object"
-              },
-              {
-                "kind": "return",
-                "type": "単品と数"
-              }
-            ]
-          },
-          "accessibility": null,
-          "optional": false,
-          "isAbstract": false,
-          "isStatic": true,
-          "name": "create",
-          "kind": "method",
-          "functionDef": {
-            "params": [
-              {
-                "kind": "identifier",
-                "name": "object",
-                "optional": false,
-                "tsType": null
-              }
-            ],
-            "returnType": null,
-            "hasBody": true,
-            "isAsync": false,
-            "isGenerator": false,
-            "typeParams": []
-          },
-          "location": {
-            "filename": "./static/js/domain/%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0/%E5%95%86%E5%93%81.mjs",
-            "line": 80,
-            "col": 2
-          }
-        }
-      ],
-      "extends": null,
-      "implements": [],
-      "typeParams": [],
-      "superTypeParams": []
-    }
-  },
-  {
-    "kind": "class",
     "name": "商品Repository",
     "location": {
       "filename": "./static/js/domain/%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0/%E5%95%86%E5%93%81.mjs",
-      "line": 88,
+      "line": 57,
       "col": 0
     },
     "declarationKind": "export",
@@ -4140,7 +4941,7 @@
           },
           "location": {
             "filename": "./static/js/domain/%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0/%E5%95%86%E5%93%81.mjs",
-            "line": 92,
+            "line": 61,
             "col": 2
           }
         },
@@ -4190,7 +4991,7 @@
           },
           "location": {
             "filename": "./static/js/domain/%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0/%E5%95%86%E5%93%81.mjs",
-            "line": 100,
+            "line": 69,
             "col": 2
           }
         },
@@ -4223,7 +5024,7 @@
           },
           "location": {
             "filename": "./static/js/domain/%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0/%E5%95%86%E5%93%81.mjs",
-            "line": 107,
+            "line": 76,
             "col": 2
           }
         }
@@ -4246,6 +5047,20 @@
     "importDef": {
       "src": "./static/js/lib/ValueObject.mjs",
       "imported": "StringValueObject"
+    }
+  },
+  {
+    "kind": "import",
+    "name": "単品と数",
+    "location": {
+      "filename": "./static/js/domain/%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0/%E5%95%86%E5%93%81.mjs",
+      "line": 2,
+      "col": 0
+    },
+    "declarationKind": "private",
+    "importDef": {
+      "src": "./static/js/domain/%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0/%E5%8D%98%E5%93%81.mjs",
+      "imported": "単品と数"
     }
   },
   {

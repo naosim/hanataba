@@ -46,6 +46,37 @@ export class 単品 {
 export class 花コード extends StringValueObject {
 }
 
+export class 単品と数 {
+  /** @type {花コード} */
+  花コード
+  /** @type {number} */
+  数
+
+  /**
+   * 
+   * @param {花コード} 花コード 
+   * @param {number} 数 
+   */
+  constructor(花コード, 数) {
+    this.花コード = 花コード
+    this.数 = 数
+  }
+  toObject() {
+    return {
+      花コード: this.花コード.value,
+      数: this.数
+    }
+  }
+  /**
+   * 
+   * @param {{花コード: string, 数: number}} object 
+   * @returns {単品と数}
+   */
+  static create(object) {
+    return new 単品と数(new 花コード(object.花コード), object.数)
+  }
+}
+
 /**
  * @abstract
  */
